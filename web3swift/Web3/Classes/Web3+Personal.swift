@@ -59,6 +59,27 @@ extension web3.Personal {
     }
     
     /**
+     *Unlock an account on the remote node to be able to send transactions and sign messages.*
+     
+     - parameters:
+     - password: Password to use for the account
+     
+     - returns:
+     - Result object
+     
+     - important: This call is synchronous.
+     
+     */
+    public func newAccount(password:String = "web3swift") -> Result<Bool, Web3Error> {
+        do {
+            let result = try self.newAccountPromise(password: password).wait()
+            return Result(result)
+        } catch {
+            return Result.failure(error as! Web3Error)
+        }
+    }
+    
+    /**
      *Recovers a signer of some message. Message is first prepended by special prefix (check the "signPersonalMessage" method description) and then hashed.*
      
      - parameters:
