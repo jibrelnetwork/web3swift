@@ -62,6 +62,30 @@ public class web3: Web3OptionsInheritable {
         }
     }
     
+    var minerInstance: web3.Miner?
+    
+    /// Public web3.miner.* namespace.
+    public var miner: web3.Miner {
+        if (self.minerInstance != nil) {
+            return self.minerInstance!
+        }
+        self.minerInstance = web3.Miner(provider : self.provider, web3: self)
+        return self.minerInstance!
+    }
+    
+    public class Miner:Web3OptionsInheritable {
+        var provider:Web3Provider
+        //        weak var web3: web3?
+        var web3: web3
+        public var options: Web3Options {
+            return self.web3.options
+        }
+        public init(provider prov: Web3Provider, web3 web3instance: web3) {
+            provider = prov
+            web3 = web3instance
+        }
+    }
+    
     var personalInstance: web3.Personal?
     
     /// Public web3.personal.* namespace.
