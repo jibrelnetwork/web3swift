@@ -32,7 +32,9 @@ class web3swift_personal_Tests: XCTestCase {
         
         XCTAssert(allAddresses.contains(address), "Failed to add new account to remote node")
         
-        guard case .success(let newAddresses) = web3.personal.unlockAccount(account: address, password: password) else { return XCTFail() }
+        guard case .success(let res) = web3.personal.unlockAccount(account: address, password: password) else { return XCTFail() }
+        
+        XCTAssert(res, "Failed to unlock new account on remote node")
     }
 
 }
