@@ -54,6 +54,8 @@
 		433ACCD0216E2A07002CA172 /* Promise+Web3+Personal+NewAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433ACCCB216E2A07002CA172 /* Promise+Web3+Personal+NewAccount.swift */; };
 		433ACCD1216E2A07002CA172 /* Web3+Miner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433ACCCC216E2A07002CA172 /* Web3+Miner.swift */; };
 		433ACCD2216E2A07002CA172 /* Web3+Miner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433ACCCC216E2A07002CA172 /* Web3+Miner.swift */; };
+		433ACCE8217504CA002CA172 /* web3swift_personal_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433ACCE7217504CA002CA172 /* web3swift_personal_Tests.swift */; };
+		433ACCE9217504CA002CA172 /* web3swift_personal_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433ACCE7217504CA002CA172 /* web3swift_personal_Tests.swift */; };
 		4B900282EFA99F16100CC958 /* libPods-web3swift-macOS_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8675751D91DB2DBC9E7A3469 /* libPods-web3swift-macOS_Tests.a */; };
 		4EFFCB6E208552F2008165FE /* web3swift_local_node_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFFCB6D208552F2008165FE /* web3swift_local_node_Tests.swift */; };
 		4EFFCB70208554EB008165FE /* web3swift_remoteParsing_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFFCB6F208554EB008165FE /* web3swift_remoteParsing_Tests.swift */; };
@@ -263,6 +265,7 @@
 		433ACCCA216E2A07002CA172 /* Promise+Web3+Miner+Start.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Promise+Web3+Miner+Start.swift"; sourceTree = "<group>"; };
 		433ACCCB216E2A07002CA172 /* Promise+Web3+Personal+NewAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Promise+Web3+Personal+NewAccount.swift"; sourceTree = "<group>"; };
 		433ACCCC216E2A07002CA172 /* Web3+Miner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Web3+Miner.swift"; sourceTree = "<group>"; };
+		433ACCE7217504CA002CA172 /* web3swift_personal_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = web3swift_personal_Tests.swift; sourceTree = "<group>"; };
 		4EFFCB6D208552F2008165FE /* web3swift_local_node_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = web3swift_local_node_Tests.swift; sourceTree = "<group>"; };
 		4EFFCB6F208554EB008165FE /* web3swift_remoteParsing_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = web3swift_remoteParsing_Tests.swift; sourceTree = "<group>"; };
 		57F8C9C48884592DCF561393 /* libPods-web3swift-macOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-web3swift-macOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -519,6 +522,7 @@
 				E23B5AE020EA695400DC7F32 /* web3swift_rinkeby_personalSignature_Tests.swift */,
 				E23B5AE220EA69B900DC7F32 /* web3swift_numberFormattingUtil_Tests.swift */,
 				E23B5AE420EA6A0A00DC7F32 /* web3swift_contractV2_Tests.swift */,
+				433ACCE7217504CA002CA172 /* web3swift_personal_Tests.swift */,
 			);
 			path = web3swiftTests;
 			sourceTree = "<group>";
@@ -1232,6 +1236,7 @@
 				E23B5AE120EA695400DC7F32 /* web3swift_rinkeby_personalSignature_Tests.swift in Sources */,
 				E23B5ADB20EA67D800DC7F32 /* web3swift_AdvancedABIv2_Tests.swift in Sources */,
 				81A7B28A2143DF1D004CD2C7 /* web3swift_EIP681_Tests.swift in Sources */,
+				433ACCE8217504CA002CA172 /* web3swift_personal_Tests.swift in Sources */,
 				4EFFCB70208554EB008165FE /* web3swift_remoteParsing_Tests.swift in Sources */,
 				00E5FE7C20EA37B50030E0D6 /* web3swift_ERC20_Tests.swift in Sources */,
 				E23B5AE320EA69B900DC7F32 /* web3swift_numberFormattingUtil_Tests.swift in Sources */,
@@ -1345,6 +1350,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				433ACCE9217504CA002CA172 /* web3swift_personal_Tests.swift in Sources */,
 				81FA43F62044097100EE14D5 /* web3swift_macOS_Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

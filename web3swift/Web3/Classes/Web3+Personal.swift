@@ -51,7 +51,7 @@ extension web3.Personal {
      */
     public func unlockAccount(account: EthereumAddress, password:String = "web3swift", seconds: UInt64 = 300) -> Result<Bool, Web3Error> {
         do {
-            let result = try self.unlockAccountPromise(account: account).wait()
+            let result = try self.unlockAccountPromise(account: account, password: password, seconds: seconds).wait()
             return Result(result)
         } catch {
             return Result.failure(error as! Web3Error)
@@ -59,7 +59,7 @@ extension web3.Personal {
     }
     
     /**
-     *Unlock an account on the remote node to be able to send transactions and sign messages.*
+     *Add new account on the remote node.*
      
      - parameters:
      - password: Password to use for the account
@@ -70,7 +70,7 @@ extension web3.Personal {
      - important: This call is synchronous.
      
      */
-    public func newAccount(password:String = "web3swift") -> Result<Bool, Web3Error> {
+    public func newAccount(password:String = "web3swift") -> Result<EthereumAddress, Web3Error> {
         do {
             let result = try self.newAccountPromise(password: password).wait()
             return Result(result)
